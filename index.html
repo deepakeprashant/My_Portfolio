@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="text/css" href="images/apple-touch-icon.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"         integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
+	<title>Personal Blog</title>
+</head>
+<body onload="loadfunction()">
+	<div id="preloader">
+		<h2>Loading...</h2>
+	</div>
+	<header>
+		<div class="logo">
+			<img src="https://img.icons8.com/glyph-neue/64/000000/spiderman-old.png"/>
+		</div>
+        <div class="sidebarMenu display-none">
+        	<div class="close">&times;</div>
+        	<div class="main">
+        		<div class="box-img">
+        			<img src="images/profile.jpeg">
+        		</div>
+        		<h4>Prashant Deepake</h4>
+        		<h5>IT Engineer</h5>
+        		<h6>(Web Developer)</h6>
+        		<br>
+        		<div class="line"></div>
+        		<div class="details">
+        			<div class="circle">
+        				<div class="percent" style="--clr:#ff4d05;--num:95">
+        					<div class="dot"></div>
+        					<svg>
+        						<circle cx="40" cy="40" r="40"></circle>
+        						<circle cx="40" cy="40" r="40"></circle>
+        					</svg>
+        					<div class="lang">
+        						<h2>95<span>%</span></h2>
+        						<p>Marathi</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="circle">
+        				<div class="percent" style="--clr:#ff4d05;--num:85">
+        					<div class="dot"></div>
+        					<svg>
+        						<circle cx="40" cy="40" r="40"></circle>
+        						<circle cx="40" cy="40" r="40"></circle>
+        					</svg>
+        					<div class="lang">
+        						<h2>85<span>%</span></h2>
+        						<p>Hindi</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="circle">
+        				<div class="percent" style="--clr:#ff4d05;--num:70">
+        					<div class="dot"></div>
+        					<svg>
+        						<circle cx="40" cy="40" r="40"></circle>
+        						<circle cx="40" cy="40" r="40"></circle>
+        					</svg>
+        					<div class="lang">
+        						<h2>70<span>%</span></h2>
+        						<p>English</p>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="skill">
+        		<section class="bar-graph bar-graph-vertical bar-graph-two">
+        			<div class="bar-one bar-container">
+        				<div class="bar" data-percentage="50%"></div>
+        				<span class="year">Analytical</span>
+        			</div>
+        			<div class="bar-two bar-container">
+        				<div class="bar" data-percentage="66%"></div>
+        				<span class="year">Photshop</span>
+        			</div>
+        			<div class="bar-three bar-container">
+        				<div class="bar" data-percentage="70%"></div>
+        				<span class="year">Management</span>
+        			</div>
+        			<div class="bar-four bar-container">
+        				<div class="bar" data-percentage="82%"></div>
+        				<span class="year">Teamwork</span>
+        			</div>
+        			<div class="bar-five bar-container">
+        				<div class="bar" data-percentage="90%"></div>
+        				<span class="year">Adaptability</span>
+        			</div>
+        		</section>
+        	</div>
+        </div>
+		<ul class="navlist">
+			<li><a href="#home" class="active">Home</a></li>
+			<li><a href="#services" data-after="services">Services</a></li>
+			<li><a href="#project">Project</a></li>
+			<li><a href="#history" data-after="history">History</a></li>
+			<li><a href="#about" data-after="about">About</a></li>
+			<li><a href="#contact">Contact Me</a></li>
+		</ul>
+		<div class="bx bx-menu" id="menu-icon">
+			
+		</div>
+	</header>
+	<section class="home" id="home">
+		<div class="home-text">
+			<div class="slide">
+				<span class="one">Hello</span>
+				<span class="two">I'm</span>
+			</div>
+			<h1>Prashant</h1>
+			<h3>I can Build
+			<span class="text"></span></h3>
+			<a href="images/Resume.pdf" type="button" class="resume">Download Resume</a>
+		</div>
+	</section>
+
+
+	<!----service section design--->
+	<section class="services" id="services">
+		<div class="main-text">
+			<p>What I am Expert In</p>
+			<h2>courses <span>&</span> Certification</h2>
+		</div>
+
+		<div class="services-content">
+			<div class="box">
+				<div class="s-icons">
+					<img src="./images/visiotrent-logo.png"/>
+					<div class="logo-text">Visiotrend Pvt Ltd Company</div>
+				</div>
+				<h3>Web Design<span style="font-size: 14px;"> (Intern) </span></h3>
+				<p>The Web Desing internship offers practical work experience and an introduction to creating and improving web-based systems.</p>
+				<button onclick="myfunction()" class="read">Read More </button>
+			</div>
+
+			<div class="box">
+				<div class="s-icons">
+					<img src="https://img.icons8.com/color/48/000000/salesforce.png"/>
+					<div class="logo-text">salesforce.com</div>
+				</div>
+				<h3>Salesforce <span style="font-size: 14px;">(Course)</span></h3>
+				<p>Course will help you to get an in-depth understanding of Salesforce Admin roles and data access, Data Management, Reports and Dashboards.</p>
+				<button onclick="myfunction2()" class="read">Read More </button>
+			</div>
+
+			<div class="box">
+				<div class="s-icons">
+					<img src="./images/BridgeLabz-Logo.svg" />
+					<div class="logo-text">BrideLabz.com</div>
+				</div>
+				<h3>Java Developer <span style="font-size: 14px;">(Course)</span></h3>
+				<p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy.</p>
+				<button onclick="myfunction3()" class="read">Read More </button>
+			</div>
+
+			<div class="box">
+				<div class="s-icons">
+					<img src="https://img.icons8.com/external-tal-revivo-green-tal-revivo/36/000000/external-hackerrank-is-a-technology-company-that-focuses-on-competitive-programming-logo-green-tal-revivo.png"/>
+					<div class="logo-text">Hackerrank.com</div>
+				</div>
+				<h3>JavaScript <span style="font-size: 14px;">(Certification)</span></h3>
+				<p>HackerRank certifications It covers topics like, Functions, Currying, Hoisting, Scope, Inheritance, Events and Error Handling.</p>
+				<button onclick="myfunction4()" class="read">Read More </button>
+			</div>
+
+		</div>
+		<div class="popup-img" id="popup-model">
+			<span id="close" onclick="closefunction()">&times</span>
+			<img src="images/error.png" id="popup">
+		</div>
+	</section>
+
+<!---------------portfolio section design ------------------------>
+
+	<section class="portfolio" id="project">
+		<div class="main-text">
+			<p>what i am experienced in</p>
+			<h2><span>Latest</span> Project</h2>
+		</div>
+
+		<div class="portfolio-content">
+			<div class="row">
+				<img src="images/portfolio5.jpg">
+				<div class="layer">
+					<h5>Online Bike Rental</h5>
+					<p>This system is designed to help the customers to take bikes for rent.We want to be free of time so instead of going through metros and taxis, we prefer to have our own vehicle for rent.</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="images/Event.jpg">
+				<div class="layer">
+					<h5>Event Management System</h5>
+					<p> This project gives feature of remotely creating,removing,allotting tasks,etc .It gives Admin access to see guest list.This project will reduce paperwork and manpower.</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="images/OnlineExams.jpeg">
+				<div class="layer">
+					<h5>Online Exam System</h5>
+					<p>This system not only replace paperwork but also releases the workload offaculty. It fulfills the requirement of the institute to conduct the exam online.</p>
+					<a href="#"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
+
+	</section>
+
+		<!----service section design--->
+	<section class="services" id="history">
+		<div class="main-text">
+			<p>What I am Study In</p>
+			<h2><span>My</span> Education</h2>
+		</div>
+
+		<div class="services-content">
+			<div class="box">
+				<div class="s-icons">
+					<img src="./images/mgm.png"/>
+					<div class="logo-text">MGM College Of Engineering,Nanded</div>
+				</div>
+				<h3>Degree<span style="font-size: 14px;"> (BE IT) </span></h3>
+				<p>Completed graduation ( IT ) from MGM’s College of Engineering Nanded, with 8.5 CGPA.</p>
+				<button class="read">Read More </button>
+			</div>
+
+			<div class="box">
+				<div class="s-icons">
+					<img src="./images/sahayog.png"/>
+					<div class="logo-text">IIT Polytechnic,Nanded</div>
+				</div>
+				<h3>Diploma <span style="font-size: 14px;">(CSE)</span></h3>
+				<p>Completed Diploma (CSE) from SSS’s Indira Institute of Technology (poly) Nanded,with 68%.</p>
+				<button class="read">Read More </button>
+			</div>
+
+			<div class="box">
+				<div class="s-icons">
+					<img src="https://img.icons8.com/external-smashingstocks-outline-color-smashing-stocks/66/null/external-School-online-education-smashingstocks-outline-color-smashing-stocks.png"/>
+					<div class="logo-text">Mahatma Kabir Highschool</div>
+				</div>
+				<h3>HighSchool <span style="font-size: 14px;">(SSC)</span></h3>
+				<p>Completed SSC From Mahatma Kabir Highschool Nanded, with 72 percentage.</p>
+				<button class="read">Read More </button>
+			</div>
+
+		</div>
+	</section>
+	<!---------------portfolio section design ------------------------>
+
+	<section class="portfolio">
+		<div class="main-text">
+			<p>What I am Expert In</p>
+			<h2>My<span>Skill</span></h2>
+		</div>
+
+		<div class="portfolio-content">
+			<div class="skills">
+				<div class="skill">
+					<div class="skill-name">HTML</div>
+					<div class="skill-bar">
+						<div class="skill-per" per="90%" style="max-width: 90%;">
+						</div>
+					</div>
+				</div>
+
+				<div class="skill">
+					<div class="skill-name">CSS</div>
+					<div class="skill-bar">
+						<div class="skill-per" per="85%" style="max-width: 85%;">
+						</div>
+					</div>
+				</div>
+
+				<div class="skill">
+					<div class="skill-name">JavaScript</div>
+					<div class="skill-bar">
+						<div class="skill-per" per="70%" style="max-width: 70%;">
+						</div>
+					</div>
+				</div>
+
+				<div class="skill">
+					<div class="skill-name">MYSQL</div>
+					<div class="skill-bar">
+						<div class="skill-per" per="75%" style="max-width: 75%;">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="skills">
+				<div class="skill">
+					<div class="skill-name">c/c++</div>
+					<div class="skill-bar">
+						<div class="skill-per" per="75%" style="max-width:75%">
+						</div>
+					</div>
+				</div>
+
+				<div class="skill">
+					<div class="skill-name">java</div>
+					<div class="skill-bar">
+						<div class="skill-per" per="80%" style="max-width: 80%;">
+						</div>
+					</div>
+				</div>
+
+				<div class="skill">
+					<div class="skill-name">Python</div>
+					<div class="skill-bar">
+						<div class="skill-per" per="60%" style="max-width: 60%;">
+						</div>
+					</div>
+				</div>
+
+				<div class="skill">
+					<div class="skill-name">PHP</div>
+					<div class="skill-bar">
+						<div class="skill-per" per="60%" style="max-width: 60%;">
+						</div>
+					</div>
+				</div>
+			</div>
+
+	</section>
+
+	<!----about section design--->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="./images/about.JPG">
+		</div>
+
+		<div class="about-text">
+			<h2>About <span>Me</span></h2>
+			<h4>Creative <span>Developer</span></h4>
+			<p style="margin-top: -10px;">Hello,<br>&nbsp&nbspMy name is Prashant Deepake. I have completed My Engineering in Information Technology from MGM's College Of Engineering Nanded. i have also completed Diploma in Computer Engineering.I'm Both a software Engineer and Front-End Developer with a diverse range of skills including React,Java,Python,C++.<br>&nbsp&nbspOne key thing to notice is how the portfolio includes a lot of past projects. Instead of using a generic collage of projects, Tamal Sen shows off UX skills by highlighting a featured project first and varying the sizes of project screenshots for past work. </p>
+			<a href="./images/Resume.pdf" class="resume">Download Resume</a>
+		</div>
+	</section>
+
+	<!----contact section design--->
+	<section class="contact" id="contact">
+		<div class="contact-text">
+			<h2>Contact <span>Me!</span></h2>
+			<h4>If You Have Any Project In Your Mind <span>or</span> Hire Contact Me.</h4>
+			<p>I'm a <span>Developer</span> - creating bold & brave interface design, Responsive website, Android Application </p>
+			<div class="list">
+				<li><a href="#">Mobile Number : <span>9130590029</span></a></li>
+				<li><a href="#">Email Id : <span>deepakeprashant@gmail.com</span></a></li>
+			</div>
+
+			<div class="contact-icons">
+				<a href="https://github.com/deepakeprashant07"><i class="bx bxl-github"></i></a>
+				<a href="https://www.linkedin.com/in/prashant-deepake-30597521a/"><i class="bx bxl-linkedin-square" aria-hidden="true"></i></a>
+				<a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+				<a href="#"><i class='bx bxl-youtube' ></i></a>
+			</div>
+		</div>
+
+		<div class="contact-form">
+			<form action="sendmail()" class="cont-form">
+				<input id="name" type="name" placeholder="Your Name" required>
+				<input id="email" type="email" placeholder="Your Email Id" required>
+				<input id="mob" type="" placeholder="Your Mobile Number" required>
+				<textarea name="msg" id="msg" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
+				<input type="submit" value="Send Message" class="submit" required>
+			</form>
+		</div>
+	</section>
+
+	<!----end section design--->
+	<section class="end">
+		<div class="last-text">
+			<p>Copyright © 2022 by Prashant Deepake All Rights Reserved.</p>
+		</div>
+
+		<div class="top">
+			<a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="popup.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript" src="sidebar.js"></script>
+	<script>
+		var typing=
+		new Typed(".text", {
+			strings: ["", "Web Application", "Web Template", "Web Logo", "Website"],
+			typeSpeed: 100,
+			backSpeed: 40,
+			loop: true,
+		});
+	</script>
+	<script>
+		var loader = document.getElementById("preloader");
+		function loadfunction() {
+			loader.style.display="none";
+		}
+	</script>
+	<script>
+		const form = document.querySelector('.cont-form'),
+		function sendmail() {
+		    var  name = $('#name').val();
+		    var  email = $('#email').val();
+		    var  mob = $('#mob').val();
+		    var  msg = $('#msg').val();
+		    
+		    var Body = 'Name :'+name+'<br>Email :'+email+'<br>Mobile No :'+mob+'<br>message'+msg;
+			Email.send(
+				{
+					Host : "smtp.gmail.com",
+    				Username : "rsona2861@gmail.com",
+    				Password : "Pass@1234",
+    				To : 'deepakeprashant@gmail.com',
+    				From : "rsona2861@gmail.com"+name,
+    				Subject : "New cont  form",
+    				Body : Body
+				}).then(
+					message => {
+						if (message=='OK') {
+							alert('thank You for connecting');
+						}
+						else{
+							console.error(message);
+							alert('Error at sending message');
+						}
+					}
+				);
+			}
+
+			form.addEventListener('submit',sendMsg(email));
+	</script>
+</body>
+</html>
